@@ -1,0 +1,3 @@
+安装 BBR：
+1）验证是否安装BBR：sysctl net.ipv4.tcp_congestion_control
+2）安装BBR：echo -e "\\nnet.core.default_qdisc=fq\\nnet.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf && sysctl -p
